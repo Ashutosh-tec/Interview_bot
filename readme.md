@@ -42,7 +42,6 @@ Create a .env file in the root directory with the following keys:
 
 ```
 PINECONE_API_KEY=your_pinecone_api_key
-PINECONE_API_ENV=your_pinecone_environment
 GOOGLE_API_KEY=your_google_api_key
 ```
 
