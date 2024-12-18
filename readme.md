@@ -5,12 +5,14 @@ This project demonstrates a Retriever-Augmented Generation (RAG) model for an in
 ## Project Overview
 
 ### Features:
+- **Scrapping**: Using BeautifulSoup4 to scrap interview preparation materials.
 - **Retriever-Augmented Generation (RAG)**: Uses a retriever to fetch relevant documents based on user input, then generates responses using a generative language model (Google Gemini).
 - **Pinecone Integration**: Stores and retrieves document embeddings from a Pinecone index.
 - **Google Gemini Integration**: Generates human-like responses based on retrieved documents.
 - **Streamlit Interface**: Provides a simple web interface to interact with the bot.
 
 ### Flow:
+1. **Scrap Data**: Scrap data from multiple sites.
 1. **Data Ingestion**: Raw text data is scraped and preprocessed into text chunks.
 2. **Embedding Generation**: HuggingFace embeddings are used to vectorize the text chunks.
 3. **Document Storage**: The vectorized text chunks are stored in Pinecone for efficient retrieval.
@@ -46,6 +48,13 @@ GOOGLE_API_KEY=your_google_api_key
 ```
 
 ## Run the Application:
+### Clone the Repo
+
+### Scrap and store in PDF:
+```bash
+python scraped_data/scraper.py
+```
+
 ### Create Vector Database:
 ```bash
 python store_index.py
