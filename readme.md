@@ -20,7 +20,7 @@ This project demonstrates a Retriever-Augmented Generation (RAG) model for an in
 
 ---
 ### RAG Architecture Diagram
-![Architecture Diagram](images\rag_architecture.png)
+![Architecture Diagram](images/rag_architecture.png)
 
 ---
 
