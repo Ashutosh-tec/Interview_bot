@@ -81,6 +81,6 @@ streamlit run app.py
 
 ## Working
 - Note: Screenshot of working application is partial screenshot to improve readability.
-![Working Application](images\working_app.png)
-![Original wbbesite content](images\original_wbbesite_conten.png)
+![Working Application](images/working_app.png)
+![Original wbbesite content](images/original_wbbesite_conten.png)
 - We can see RAG application is able to generate context aware output.
