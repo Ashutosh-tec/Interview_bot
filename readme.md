@@ -5,7 +5,7 @@ This project demonstrates a Retriever-Augmented Generation (RAG) model for an in
 ## Project Overview
 
 ### Features:
-- **Scrapping**: Using BeautifulSoup4 to scrap interview preparation materials.
+- **Scraping**: Using BeautifulSoup4 to scrap interview preparation materials.
 - **Retriever-Augmented Generation (RAG)**: Uses a retriever to fetch relevant documents based on user input, then generates responses using a generative language model (Google Gemini).
 - **Pinecone Integration**: Stores and retrieves document embeddings from a Pinecone index.
 - **Google Gemini Integration**: Generates human-like responses based on retrieved documents.
@@ -75,4 +75,12 @@ streamlit run app.py
 - src/helper.py: Contains utility functions such as download_hugging_face_embeddings, load_files, text_split, etc.
 - gemini_rag.py: Contains the logic for document retrieval and response generation using the Pinecone vector store and the Google Gemini API.
 - store_index.py: Create vector database.
-- Environment Configuration: Initializes the API keys and sets up environment variables.
+- .env: Environment Configuration initializes the API keys and sets up environment variables.
+- scraped_data\scraper.py: scrap data from website
+
+
+## Working
+- Note: Screenshot of working application is partial screenshot to improve readability.
+![Working Application](images\working_app.png)
+![Original wbbesite content](images\original_wbbesite_conten.png)
+- We can see RAG application is able to generate context aware output.
