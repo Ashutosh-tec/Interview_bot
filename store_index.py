@@ -42,4 +42,4 @@ except Exception as e:
 
 # Now create the PineconeVectorStore
 docsearch = PineconeVectorStore.from_texts([t.page_content for t in text_chunks], embeddings, index_name=index_name)
-docsearch = PineconeVectorStore.from_existing_index(index_name, embeddings)
+print("storing done!!!!")

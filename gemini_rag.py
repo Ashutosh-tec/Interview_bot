@@ -68,7 +68,7 @@ def generate_rag_response(query, model):
     retrieved_docs = retrieve_documents(query)
 
     # Combine retrieved context with user query
-    augmented_prompt = f"Context:\n{retrieved_docs}\n\nQuery: {query}\nNOTE: Act as a interview expert.\nAnswer:"
+    augmented_prompt = f"Context:\n{retrieved_docs}\n\nQuery: {query}\nNOTE: Act as a interview expert and use the given context.\nAnswer:"
 
     # Generate response using Gemini
     try:
