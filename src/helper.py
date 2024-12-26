@@ -1,6 +1,6 @@
-from langchain.document_loaders import TextLoader, DirectoryLoader, UnstructuredFileLoader, PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.document_loaders import TextLoader, DirectoryLoader, UnstructuredFileLoader, PyPDFLoader
 
 
 # Extract Data from Text, DOCX, and PDF Files

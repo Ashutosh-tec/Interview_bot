@@ -1,9 +1,10 @@
-from src.helper import load_files, text_split, download_hugging_face_embeddings
-from langchain_pinecone.vectorstores import PineconeVectorStore
-from langchain_community.vectorstores import Pinecone
-from pinecone import Pinecone, ServerlessSpec
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
+from pinecone import Pinecone, ServerlessSpec
+from pinecone import ServerlessSpec
+
+from langchain_pinecone.vectorstores import PineconeVectorStore
+from src.helper import load_files, text_split, download_hugging_face_embeddings
 
 load_dotenv()
 

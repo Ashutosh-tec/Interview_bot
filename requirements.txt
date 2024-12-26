@@ -11,6 +11,7 @@ PyMuPDF
 sentence-transformers
 
 anthropic
-
+python-dotenv
 google-generativeai
 streamlit
+googlesearch-python

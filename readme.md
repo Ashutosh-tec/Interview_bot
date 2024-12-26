@@ -84,3 +84,6 @@ streamlit run app.py
 ![Working Application](images/working_app.png)
 ![Original wbbesite content](images/original_wbbesite_conten.png)
 - We can see RAG application is able to generate context aware output.
+
+## Additional Searching
+- System will also add top 5 google search results (link) for reference.

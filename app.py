@@ -1,4 +1,5 @@
 import streamlit as st
+from src.google_query import generate_google_res
 from gemini_rag import model, generate_rag_response
 
 # Define the Streamlit application
@@ -18,13 +19,13 @@ def main():
         st.session_state.messages.append(("You", user_input))
         
         # Generate RAG response
-        response = generate_rag_response(user_input, model)
+        response = generate_rag_response(user_input, model) 
+        # adding google response
+        extended_response =  response + '\n' +generate_google_res(user_input)
         
         # Add RAG response to chat history
-        st.session_state.messages.append(("Expert", response))
+        st.session_state.messages.append(("Expert", extended_response))
         
-        # Clear the input field after submission
-        # st.session_state.user_input = ""  # This clears the value, not the widget itself
 
     # Display chat history
     for speaker, message in st.session_state.messages:
